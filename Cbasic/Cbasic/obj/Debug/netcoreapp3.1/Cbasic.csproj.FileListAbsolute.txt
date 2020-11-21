@@ -1,0 +1,13 @@
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\bin\Debug\netcoreapp3.1\Cbasic.exe
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\bin\Debug\netcoreapp3.1\Cbasic.deps.json
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\bin\Debug\netcoreapp3.1\Cbasic.runtimeconfig.json
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\bin\Debug\netcoreapp3.1\Cbasic.runtimeconfig.dev.json
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\bin\Debug\netcoreapp3.1\Cbasic.dll
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\bin\Debug\netcoreapp3.1\Cbasic.pdb
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\obj\Debug\netcoreapp3.1\Cbasic.csprojAssemblyReference.cache
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\obj\Debug\netcoreapp3.1\Cbasic.AssemblyInfoInputs.cache
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\obj\Debug\netcoreapp3.1\Cbasic.AssemblyInfo.cs
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\obj\Debug\netcoreapp3.1\Cbasic.csproj.CoreCompileInputs.cache
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\obj\Debug\netcoreapp3.1\Cbasic.dll
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\obj\Debug\netcoreapp3.1\Cbasic.pdb
+F:\Катя\Тестировщик\Repository\Homeworks\Cbasic\Cbasic\obj\Debug\netcoreapp3.1\Cbasic.genruntimeconfig.cache
