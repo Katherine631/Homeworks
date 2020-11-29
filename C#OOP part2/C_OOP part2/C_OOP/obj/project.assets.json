@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Катя\\Тестировщик\\Repository\\Homeworks\\C#OOP\\C_OOP\\C_OOP\\C_OOP.csproj",
+      "projectUniqueName": "F:\\Катя\\Тестировщик\\Repository\\Homeworks\\C#OOP part2\\C_OOP part2\\C_OOP\\C_OOP.csproj",
       "projectName": "C_OOP",
-      "projectPath": "F:\\Катя\\Тестировщик\\Repository\\Homeworks\\C#OOP\\C_OOP\\C_OOP\\C_OOP.csproj",
+      "projectPath": "F:\\Катя\\Тестировщик\\Repository\\Homeworks\\C#OOP part2\\C_OOP part2\\C_OOP\\C_OOP.csproj",
       "packagesPath": "C:\\Users\\paulps\\.nuget\\packages\\",
-      "outputPath": "F:\\Катя\\Тестировщик\\Repository\\Homeworks\\C#OOP\\C_OOP\\C_OOP\\obj\\",
+      "outputPath": "F:\\Катя\\Тестировщик\\Repository\\Homeworks\\C#OOP part2\\C_OOP part2\\C_OOP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\paulps\\AppData\\Roaming\\NuGet\\NuGet.Config",

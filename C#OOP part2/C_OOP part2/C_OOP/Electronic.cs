@@ -21,7 +21,7 @@ namespace C_OOP
 
         public override string ToString()
         {
-            return String.Format("Название книги: {0}, автор: {1}, год выпуска: {2}",name, author, year);
+            return String.Format("Название книги: {0}, автор: {1}, год выпуска: {2}, размер файла: {3}",name, author, year, size);
         }
     }
 }
