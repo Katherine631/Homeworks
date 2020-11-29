@@ -4,21 +4,24 @@ using System.Text;
 
 namespace C_OOP
 {
-    class Electronic: Book
+    class Electronic <T>
     {
-        public int size;
+        public T size;
+        public string name;
+        public string author;
+        public int year;
 
-        public Electronic(string name, string author, int year, int size) : base(name, author, year)
+        public Electronic(string name, string author, int year, T size) 
         {
+            this.name = name;
+            this.author = author;
+            this.year = year;
             this.size = size;
         }
-        public override void Open()
+
+        public override string ToString()
         {
-            Console.WriteLine("Электронная книга открыта");
-        }
-        public override void contents()
-        {
-            Console.WriteLine("Оглавление электронной книги открыто");
+            return String.Format("Название книги: {0}, автор: {1}, год выпуска: {2}",name, author, year);
         }
     }
 }

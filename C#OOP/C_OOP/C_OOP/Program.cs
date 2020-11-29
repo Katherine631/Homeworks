@@ -6,18 +6,31 @@ namespace C_OOP
     {
         static void Main(string[] args)
         {
-            Electronic book1 = new Electronic("Дубровский", "Пушкин", 2019, 2);
+            
             Paper book2 = new Paper("Финансист", "Драйзер", 2020, true);
+            Paper book6 = new Paper("Финансист", "Драйзер", 2020, true);
 
-            book1.Open();
-            book2.contents();
+            Paper book5 = new Paper("Три товарища", "Ремарк", 2019, true);
 
-            Culinary book3 = new Culinary("100 рецептов", "Высоцкая", 2020, true, true);
+            Console.WriteLine(book2.ToString());
+            Console.WriteLine(book5.ToString());
 
-            book3.contents();
+            Console.WriteLine(book2.Equals(book6));
+            Console.WriteLine(book2.Equals(book5));
+            Console.WriteLine(book2.year.Equals(book5.year));
 
-            Art book4 = new Art("Бременские музыканты", "Перро", 2017, 4, true);
-            book4.Open();
+
+            Medicine book7 = new Medicine("Медицина для всех", "Воеводин", 2018, true, true);
+            Medicine book8 = new Medicine("Медицина", "Иванович", 2017, true, true);
+            Console.WriteLine(book7.Equals(book8));
+
+            Electronic<int> book9 = new Electronic<int>("Три товарища", "Ремарк", 2019, 20);
+            Electronic<double> book10 = new Electronic<double>("Три товарища", "Ремарк", 2019, 2.1520);
+            Electronic<string> book11 = new Electronic<string>("Три товарища", "Ремарк", 2019, "20");
+            
+            Console.WriteLine(book9.ToString());
+            Console.WriteLine(book10.ToString());
+            Console.WriteLine(book11.ToString());
         }
     }
 }

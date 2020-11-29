@@ -24,6 +24,19 @@ namespace C_OOP
         {
             Console.WriteLine("Оглавление бумажной книги открыто");
         }
+
+        public override string ToString()
+        {
+            return String.Format("Название книги: {0}, автор: {1}, год выпуска: {2}", name, author, year);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Paper paper &&
+                   name == paper.name &&
+                   author == paper.author &&
+                   year == paper.year;
+        }
     }
 
 

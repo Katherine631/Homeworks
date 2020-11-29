@@ -12,6 +12,13 @@ namespace C_OOP
             this.ismedicine = ismedicine;
         }
 
+        public override bool Equals(object obj)
+        {
+            return obj is Medicine medicine &&
+                    name.Contains(medicine.name);
+                   
+        }
+
         public override void Open()
         {
             base.Open();
