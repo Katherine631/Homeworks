@@ -89,7 +89,7 @@
       "command": "verifyElementPresent",
       "target": "//h2",
       "targets": [],
-      "value": "Home page"
+      "value": ""
     }]
   }, {
     "id": "38b35e32-ecfd-4d46-8896-098034f4131f",
