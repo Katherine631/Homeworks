@@ -34,19 +34,29 @@ namespace NUnitTestProject1
             driver.FindElement(By.XPath("//a[contains(text(),'All Products')]")).Click();
             driver.FindElement(By.XPath("//a[contains(text(),'Fish')]")).Click();
             string ProductNameValue = driver.FindElement(By.Id("ProductName")).GetAttribute("value");
-            Assert.AreEqual("Fish", ProductNameValue);
+            
             string CategoryIdValue = driver.FindElement(By.Id("CategoryId")).GetAttribute("value");
-            Assert.AreEqual("8", CategoryIdValue);
+            
             string SupplierIdValue = driver.FindElement(By.Id("SupplierId")).GetAttribute("value");
-            Assert.AreEqual("4", SupplierIdValue);
+            
             string QuantityPerUnitValue = driver.FindElement(By.Id("QuantityPerUnit")).GetAttribute("value");
-            Assert.AreEqual("1", QuantityPerUnitValue);
+            
             string UnitsInStockValue = driver.FindElement(By.Id("UnitsInStock")).GetAttribute("value");
-            Assert.AreEqual("10", UnitsInStockValue);
+            
             string UnitsOnOrderValue = driver.FindElement(By.Id("UnitsOnOrder")).GetAttribute("value");
-            Assert.AreEqual("3", UnitsOnOrderValue);
+            
             string ReorderLevelValue = driver.FindElement(By.Id("ReorderLevel")).GetAttribute("value");
-            Assert.AreEqual("1", ReorderLevelValue);
+            
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual("Fish", ProductNameValue);
+                Assert.AreEqual("8", CategoryIdValue);
+                Assert.AreEqual("4", SupplierIdValue);
+                Assert.AreEqual("1", QuantityPerUnitValue);
+                Assert.AreEqual("10", UnitsInStockValue);
+                Assert.AreEqual("3", UnitsOnOrderValue);
+                Assert.AreEqual("1", ReorderLevelValue);
+            });
         }
 
         [Test]
