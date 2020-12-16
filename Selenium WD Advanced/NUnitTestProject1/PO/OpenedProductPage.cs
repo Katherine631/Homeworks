@@ -9,7 +9,6 @@ namespace NUnitTestProject1.PO
     abstract class OpenedProductPage
     {
         public IWebDriver driver;
-<<<<<<< HEAD
       //  public string ProductName;
      //   public string CategoryId;
      //   public string SupplierId;
@@ -31,13 +30,6 @@ namespace NUnitTestProject1.PO
            // this.UnitsOnOrder = UnitsOnOrder;
            // this.ReorderLevel = ReorderLevel;
 
-=======
- 
-        public OpenedProductPage(IWebDriver driver)
-   
-        {
-            this.driver = driver;
->>>>>>> SeleniumWDadvanced
         }
         public IWebElement ProductName1 => driver.FindElement(By.Id("ProductName"));
         public IWebElement CategoryId1 => driver.FindElement(By.Id("CategoryId"));
@@ -49,7 +41,6 @@ namespace NUnitTestProject1.PO
         public IWebElement ReorderLevel1 => driver.FindElement(By.Id("ReorderLevel"));
         public IWebElement Discontinued => driver.FindElement(By.Id("Discontinued"));
         public IWebElement SendBtn => driver.FindElement(By.CssSelector (".btn"));
-<<<<<<< HEAD
         public string ProductNameValue()
         {
             return ProductName1.GetAttribute("value");
@@ -92,10 +83,6 @@ namespace NUnitTestProject1.PO
         }
 
         abstract public void EditProductPage(string ProductName, string CategoryId, string SupplierId, string UnitPrice, string QuantityPerUnit, string UnitsInStock, string UnitsOnOrder, string ReorderLevel);
-=======
-        
-
->>>>>>> SeleniumWDadvanced
         
     }
 }
