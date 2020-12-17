@@ -17,15 +17,15 @@ namespace NUnitTestProject1.PO
                 
         public void CreateNewProduct(string ProductName, string CategoryId, string SupplierId, string UnitPrice, string QuantityPerUnit, string UnitsInStock, string UnitsOnOrder, string ReorderLevel)
         {
-            new Actions(driver).SendKeys(ProductName1, ProductName).Build().Perform();
-            new Actions(driver).SendKeys(CategoryId1, CategoryId).Build().Perform();
-            new Actions(driver).SendKeys(SupplierId1, SupplierId).Build().Perform();
-            new Actions(driver).SendKeys(UnitPrice1, UnitPrice).Build().Perform();
-            new Actions(driver).SendKeys(QuantityPerUnit1, QuantityPerUnit).Build().Perform();
-            new Actions(driver).SendKeys(UnitsInStock1, UnitsInStock).Build().Perform();
-            new Actions(driver).SendKeys(UnitsOnOrder1, UnitsOnOrder).Build().Perform();
-            new Actions(driver).SendKeys(ReorderLevel1, ReorderLevel).Build().Perform();
-            new Actions(driver).Click(Discontinued).Build().Perform();
+            new Actions(driver).SendKeys(FldProductName, ProductName).Build().Perform();
+            new Actions(driver).SendKeys(FldCategoryId, CategoryId).Build().Perform();
+            new Actions(driver).SendKeys(FldSupplierId, SupplierId).Build().Perform();
+            new Actions(driver).SendKeys(FldUnitPrice, UnitPrice).Build().Perform();
+            new Actions(driver).SendKeys(FldQuantityPerUnit, QuantityPerUnit).Build().Perform();
+            new Actions(driver).SendKeys(FldUnitsInStock, UnitsInStock).Build().Perform();
+            new Actions(driver).SendKeys(FldUnitsOnOrder, UnitsOnOrder).Build().Perform();
+            new Actions(driver).SendKeys(FldReorderLevel, ReorderLevel).Build().Perform();
+            new Actions(driver).Click(FldDiscontinued).Build().Perform();
             new Actions(driver).Click(SendBtn).Build().Perform();
         }
     }

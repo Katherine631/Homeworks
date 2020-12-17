@@ -13,8 +13,7 @@ namespace NUnitTestProject1
         private LoginPage LoginPage;
         private HomePage HomePage;
         private ProductsPage ProductsPage;
-        private OpenedProductPage OpenedProductPage;
-        private NewProductPage NewProduct;
+        
 
         [OneTimeSetUp]
         public void Setup()
@@ -64,7 +63,7 @@ namespace NUnitTestProject1
                 Assert.AreEqual("1", existProductPage1.ReorderLevelValue());
                 Assert.AreEqual("true", existProductPage1.DiscontinuedValue());
             });
-            existProductPage1.ProductsPage();
+           
         }
 
         [Test, Order(4)]

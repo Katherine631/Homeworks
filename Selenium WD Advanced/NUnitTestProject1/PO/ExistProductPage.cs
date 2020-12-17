@@ -14,43 +14,42 @@ namespace NUnitTestProject1.PO
         }
         public string ProductNameValue()
         {
-            return ProductName1.GetAttribute("value");
+            return FldProductName.GetAttribute("value");
         }
         public string CategoryIdValue()
         {
-            return CategoryId1.GetAttribute("value");
+            return FldCategoryId.GetAttribute("value");
         }
         public string SupplierIdValue()
         {
-            return SupplierId1.GetAttribute("value");
+            return FldSupplierId.GetAttribute("value");
         }
         public string UnitPriceValue()
         {
-            return UnitPrice1.GetAttribute("value");
+            return FldUnitPrice.GetAttribute("value");
         }
         public string QuantityPerUnitValue()
         {
-            return QuantityPerUnit1.GetAttribute("value");
+            return FldQuantityPerUnit.GetAttribute("value");
         }
         public string UnitsInStockValue()
         {
-            return UnitsInStock1.GetAttribute("value");
+            return FldUnitsInStock.GetAttribute("value");
         }
         public string UnitsOnOrderValue()
         {
-            return UnitsOnOrder1.GetAttribute("value");
+            return FldUnitsOnOrder.GetAttribute("value");
         }
         public string ReorderLevelValue()
         {
-            return ReorderLevel1.GetAttribute("value");
+            return FldReorderLevel.GetAttribute("value");
         }
         public string DiscontinuedValue()
         {
-            return Discontinued.GetAttribute("checked");
+            return FldDiscontinued.GetAttribute("checked");
         }
-        public void ProductsPage()
+        public void ReturnToProductsPage()
         {
-            new Actions(driver).SendKeys(UnitPrice1, "7").Build().Perform();
             new Actions(driver).MoveToElement(SendBtn).Click(SendBtn).Build().Perform();
         }
 
