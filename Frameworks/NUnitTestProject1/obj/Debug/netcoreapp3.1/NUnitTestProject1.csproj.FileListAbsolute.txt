@@ -296,3 +296,4 @@ F:\Катя\Тестировщик\Repository\Homeworks\Frameworks\NUnitTestProj
 F:\Катя\Тестировщик\Repository\Homeworks\Frameworks\NUnitTestProject1\obj\Debug\netcoreapp3.1\NUnitTestProject1.dll
 F:\Катя\Тестировщик\Repository\Homeworks\Frameworks\NUnitTestProject1\obj\Debug\netcoreapp3.1\NUnitTestProject1.pdb
 F:\Катя\Тестировщик\Repository\Homeworks\Frameworks\NUnitTestProject1\obj\Debug\netcoreapp3.1\NUnitTestProject1.genruntimeconfig.cache
+F:\Катя\Тестировщик\Repository\Homeworks\Frameworks\NUnitTestProject1\obj\Debug\netcoreapp3.1\NUnitTestProject1.csprojAssemblyReference.cache

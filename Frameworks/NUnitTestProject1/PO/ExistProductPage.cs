@@ -8,6 +8,8 @@ namespace NUnitTestProject1.PO
 {
     class ExistProductPage : OpenedProductPage
     {
+        private new IWebElement FldCategoryId => driver.FindElement(By.XPath("//*[@id=\"CategoryId\"]/option[9]"));
+        private new IWebElement FldSupplierId => driver.FindElement(By.XPath("//*[@id=\"SupplierId\"]/option[5]"));
         public ExistProductPage(IWebDriver driver) : base(driver)
         {
             this.driver = driver;
@@ -18,15 +20,17 @@ namespace NUnitTestProject1.PO
         }
         public string CategoryIdValue()
         {
-            return FldCategoryId.GetAttribute("value");
+            return FldCategoryId.Text; 
+            
         }
         public string SupplierIdValue()
         {
-            return FldSupplierId.GetAttribute("value");
+            return FldSupplierId.Text;
         }
         public string UnitPriceValue()
         {
-            return FldUnitPrice.GetAttribute("value");
+            string UnitPriceValue = Math.Round(Convert.ToDecimal(FldUnitPrice.GetAttribute("value"))).ToString();
+            return UnitPriceValue;
         }
         public string QuantityPerUnitValue()
         {

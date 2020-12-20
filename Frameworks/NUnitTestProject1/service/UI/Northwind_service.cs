@@ -9,7 +9,7 @@ namespace NUnitTestProject1.services
     class Northwind_service
     {
         
-        public static string AddNewProduct (Product product, IWebDriver driver)
+        public static ProductsPage AddNewProduct (Product product, IWebDriver driver)
         {
             HomePage HomePage = new HomePage(driver);
             HomePage.ProductsPage();
@@ -17,16 +17,17 @@ namespace NUnitTestProject1.services
             ProductsPage.OpenNewProduct();
             NewProductPage NewProductPage = new NewProductPage(driver);
             NewProductPage.CreateNewProduct(product);
-            return ProductsPage.CurrentHead();
+            ProductsPage ProductsPage1 = new ProductsPage(driver);
+            return ProductsPage1;
 
 
         }
-        public static string Registration(User user, IWebDriver driver)
+        public static HomePage Login(User user, IWebDriver driver)
         {
             LoginPage LoginPage = new LoginPage(driver);
-            LoginPage.Login("user", "user");
+            LoginPage.Login(user.Name, user.Password);
             HomePage HomePage = new HomePage(driver);
-            return HomePage.CurrentHead();
+            return HomePage;
         }
     }
 }

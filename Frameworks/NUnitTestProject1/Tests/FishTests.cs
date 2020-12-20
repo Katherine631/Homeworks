@@ -21,13 +21,15 @@ namespace NUnitTestProject1
         [Test, Order(1)]
         public void LoginTest()
         {
-            Assert.AreEqual("Home page", Northwind_service.Registration(User1, driver));
+            HomePage HomePage = Northwind_service.Login(User1, driver);
+            Assert.AreEqual("Home page", HomePage.CurrentHead());
         }
 
         [Test, Order(2)]
         public void AddNewProductTest()
         {
-            Assert.AreEqual("All Products", Northwind_service.AddNewProduct(Fish, driver));
+            ProductsPage ProductsPage1 = Northwind_service.AddNewProduct(Fish, driver);
+            Assert.AreEqual("All Products", ProductsPage1.CurrentHead());
         }
         [Test, Order(3)]
         public void CheckProductTest()
@@ -38,13 +40,13 @@ namespace NUnitTestProject1
             ExistProductPage existProductPage1 = new ExistProductPage(driver);
             Assert.Multiple(() =>
             {
-                Assert.AreEqual("Fish", existProductPage1.ProductNameValue());
-                Assert.AreEqual("8", existProductPage1.CategoryIdValue());
-                Assert.AreEqual("4", existProductPage1.SupplierIdValue());
-                Assert.AreEqual("7,0000", existProductPage1.UnitPriceValue());
-                Assert.AreEqual("1", existProductPage1.QuantityPerUnitValue());
-                Assert.AreEqual("10", existProductPage1.UnitsInStockValue());
-                Assert.AreEqual("3", existProductPage1.UnitsOnOrderValue());
+                Assert.AreEqual(Fish.ProductName, existProductPage1.ProductNameValue());
+                Assert.AreEqual(Fish.CategoryId, existProductPage1.CategoryIdValue());
+                Assert.AreEqual(Fish.SupplierId, existProductPage1.SupplierIdValue());
+                Assert.AreEqual(Fish.UnitPrice, existProductPage1.UnitPriceValue());
+                Assert.AreEqual(Fish.QuantityPerUnit, existProductPage1.QuantityPerUnitValue());
+                Assert.AreEqual(Fish.UnitsInStock, existProductPage1.UnitsInStockValue());
+                Assert.AreEqual(Fish.UnitsOnOrder, existProductPage1.UnitsOnOrderValue());
                 Assert.AreEqual("1", existProductPage1.ReorderLevelValue());
                 Assert.AreEqual("true", existProductPage1.DiscontinuedValue());
             });
