@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bXuAFQCre2ace+I4/o/6yOnjCiPov9pwnWn3L+KBTopXfpqIUK6J7/HvvbgHRFf7Mw5Q2ncstlLLQ14g3hLqTw==",
+  "dgSpecHash": "68NX0573wXzfdXcXNADqjokpLLTlMMZfkrWujPVVJZGvkUWhbr+h0ZT6FxdEXD3Mh9ZyJwq2n+ztYeJ7dHlJ/g==",
   "success": true,
-  "projectFilePath": "F:\\Катя\\Тестировщик\\Repository\\Homeworks\\Selenium WD Advanced\\NUnitTestProject1\\NUnitTestProject1.csproj",
+  "projectFilePath": "F:\\Катя\\Тестировщик\\Repository\\Homeworks\\Frameworks\\NUnitTestProject1\\NUnitTestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\paulps\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
     "C:\\Users\\paulps\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core\\3.12.0\\dotnetseleniumextras.pageobjects.core.3.12.0.nupkg.sha512",
